@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h3>Progress Bar + Button with Event Listener</h3>
+    <div class="progress">
+        <div class="progress-bar" id="progressBar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <p id="progressText">0%</p>
+    <button class="btn btn-primary" onclick="setProgressBar(33)">Button 1 (33%)</button>
+    <button class="btn btn-primary" onclick="setProgressBar(66)">Button 2 (66%)</button>
+    <button class="btn btn-primary" onclick="setProgressBar(100)">Button 3 (100%)</button>
+</div>
+
+<script>
+    function setProgressBar(percentage) {
+        var progressBar = document.getElementById("progressBar");
+        var progressText = document.getElementById("progressText");
+
+        progressBar.style.width = percentage + "%";
+        progressBar.setAttribute("aria-valuenow", percentage);
+        progressText.innerText = percentage + "%";
+    }
+</script>
+
+</body>
+</html>

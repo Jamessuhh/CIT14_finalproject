@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In</title>
+  <style>
+    /* CSS goes here */
+    .header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      margin: 0;
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .nav-item {
+      margin-right: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+
+    .nav-item:last-child {
+      margin-right: 0;
+      margin-left: auto; /* Push the last item to the right */
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+    }
+
+    .sign_in_form {
+      width: 350px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .sign_in_form h2 {
+      text-align: center;
+      margin-bottom: 45px;
+
+    }
+
+    .sign_in_form input {
+      width: 96%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .sign_in_form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #04AA6D;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .sign_in_form button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Sign In</h1>
+    <div class="header">
+    <div class="nav-bar">
+      <a href="index.html" class="nav-item">Title Page</a>
+      <a href="about_us.html" class="nav-item">About Us</a>
+      <a href="article.html" class="nav-item">Article</a>
+      <a href="sign_in.html" class="nav-item">Sign In</a>
+    </div>
+  </div>
+  </header>
+
+  <!-- Main content -->
+  <main>
+
+    <!-- Sign in form -->
+    <div class="sign_in_form">
+
+      <h2>Sign In</h2>
+
+      <form action="/sign_in" method="post">
+
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+
+        <button type="submit">Sign In</button>
+
+      </form>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright &copy; 2023</p>
+  </footer>
+
+</body>
+</html>
